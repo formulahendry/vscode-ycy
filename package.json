@@ -5,20 +5,22 @@
     "version": "0.0.1",
     "publisher": "formulahendry",
     "engines": {
-        "vscode": "^1.32.0"
+        "vscode": "^1.30.0"
     },
     "categories": [
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.sayHello"
+        "onCommand:ycy.showReminderView",
+        "*"
     ],
     "main": "./out/extension",
     "contributes": {
         "commands": [
             {
-                "command": "extension.sayHello",
-                "title": "Hello World"
+                "command": "ycy.showReminderView",
+                "title": "打开提醒页面",
+                "category": "ycy"
             }
         ]
     },
