@@ -1,15 +1,30 @@
 {
     "name": "ycy",
-    "displayName": "ycy",
-    "description": "",
+    "displayName": "超越鼓励师",
+    "description": "写代码不再孤单，有杨超越与你同在",
     "version": "0.0.1",
     "publisher": "formulahendry",
+    "icon": "logo.jpg",
     "engines": {
         "vscode": "^1.30.0"
     },
     "categories": [
         "Other"
     ],
+    "keywords": [
+        "杨超越",
+        "提醒",
+        "鼓励"
+    ],
+    "bugs": {
+        "url": "https://github.com/formulahendry/vscode-ycy/issues",
+        "email": "formulahendry@gmail.com"
+    },
+    "homepage": "https://github.com/formulahendry/vscode-ycy/blob/master/README.md",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/formulahendry/vscode-ycy.git"
+    },
     "activationEvents": [
         "onCommand:ycy.showReminderView",
         "*"
@@ -22,7 +37,18 @@
                 "title": "打开提醒页面",
                 "category": "ycy"
             }
-        ]
+        ],
+        "configuration": {
+            "type": "object",
+            "title": "杨超越",
+            "properties": {
+                "ycy.reminderViewIntervalInMinutes": {
+                    "type": "number",
+                    "default": 60,
+                    "description": "展示提醒页面的时间间隔（分钟）"
+                }
+            }
+        }
     },
     "scripts": {
         "vscode:prepublish": "npm run compile",
