@@ -1,6 +1,6 @@
 # 蔡徐坤鼓励师
 
-在 VS Code 中连续写代码一小时（时间可配置），会有蔡徐坤专属篮球舞提醒你该休息啦~
+在 VS Code 中连续写代码一小时（时间可配置），会有蔡徐坤专属篮球舞提醒你该休息啦~鸡你太美~
 
 [forked from formulahendry/vscode-ycy](https://github.com/formulahendry/vscode-ycy)
 
