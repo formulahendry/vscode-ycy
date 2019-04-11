@@ -8,6 +8,12 @@
 
 ![usage](images/usage.png)
 
+## 超越杯编程大赛
+
+本插件正在参加第一届超越杯编程大赛，如果你喜欢，请为“超越鼓励师 for VS Code”投上一票吧！请使用微信或 QQ 扫描下面的二维码进行投票，并能查看作品的视频介绍。
+
+![vote-qr](images/vote-qr.png)
+
 ## 配置
 
 * `ycy.reminderViewIntervalInMinutes`: 展示提醒页面的时间间隔（分钟）。 (默认值为**60**)
