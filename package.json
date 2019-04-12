@@ -2,8 +2,8 @@
     "name": "cxk",
     "displayName": "坤坤鼓励师",
     "description": "写代码不再孤单，有蔡徐坤与你同在，鸡你太美~",
-    "version": "0.0.3",
-    "publisher": "formulahendry",
+    "version": "0.0.1",
+    "publisher": "sakura1357",
     "icon": "logo.png",
     "engines": {
         "vscode": "^1.30.0"
@@ -17,8 +17,8 @@
         "鸡你太美"
     ],
     "bugs": {
-        "url": "https://github.com/formulahendry/vscode-cxk/issues",
-        "email": "formulahendry@gmail.com"
+        "url": "https://github.com/sakura1357/vscode-cxk/issues",
+        "email": "xzt1357@gmail.com"
     },
     "homepage": "https://github.com/sakura1357/vscode-cxk",
     "repository": {
@@ -27,6 +27,7 @@
     },
     "activationEvents": [
         "onCommand:cxk.showReminderView",
+        "onCommand:cxk.setReminderView",
         "*"
     ],
     "main": "./out/extension",
@@ -34,7 +35,12 @@
         "commands": [
             {
                 "command": "cxk.showReminderView",
-                "title": "打开提醒页面",
+                "title": "打开默认提醒窗口",
+                "category": "cxk"
+            },
+            {
+                "command": "cxk.setReminderView",
+                "title": "内置11张GIF图，随机替换并展示",
                 "category": "cxk"
             }
         ],

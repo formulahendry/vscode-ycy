@@ -5,7 +5,7 @@ import * as path from 'path';
 export class ReminderView {
     private static panel: vscode.WebviewPanel | undefined;
 
-    public static show(context: vscode.ExtensionContext) {
+    public static show(context: vscode.ExtensionContext, imageName='cxk.gif') {
         if (this.panel) {
             this.panel.reveal();
         } else {
@@ -13,8 +13,7 @@ export class ReminderView {
                 enableScripts: true,
                 retainContextWhenHidden: true,
             });
-
-            const imagePath = vscode.Uri.file(path.join(context.extensionPath, 'images', 'cxk.gif'))
+            const imagePath = vscode.Uri.file(path.join(context.extensionPath, 'images', imageName))
                 .with({ scheme: 'vscode-resource' });
 
             this.panel.webview.html = `<!DOCTYPE html>
