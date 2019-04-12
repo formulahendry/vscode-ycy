@@ -14,7 +14,7 @@ export class ReminderView {
                 retainContextWhenHidden: true,
             });
 
-            const imagePath = vscode.Uri.file(path.join(context.extensionPath, 'images', 'cxk0.png'))
+            const imagePath = vscode.Uri.file(path.join(context.extensionPath, 'images', 'cxk.gif'))
                 .with({ scheme: 'vscode-resource' });
 
             this.panel.webview.html = `<!DOCTYPE html>
@@ -25,7 +25,7 @@ export class ReminderView {
     <title>蔡徐坤</title>
 </head>
 <body>
-    <div><h1>小哥哥~ 代码写久了，该休息啦~</h1></div>
+    <div><h1>小哥哥~ 代码写久了，该休息啦~ 鸡你太美~</h1></div>
     <div><img src="${imagePath}"></div>
 </body>
 </html>`;
