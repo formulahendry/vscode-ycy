@@ -17,3 +17,11 @@
 ## 配置
 
 * `ycy.reminderViewIntervalInMinutes`: 展示提醒页面的时间间隔（分钟）。 (默认值为**60**)
+* `ycy.showTitle`: 提示文字。 (默认值为**小哥哥，小哥哥，代码写久了，该休息啦~**)
+
+* `ycy.isUseConfigImage`: 是否使用自己配置图片 (默认值为**false**)
+* `ycy.configImages`: 配置图片数组（需要搭配ycy.isUseConfigImage为true） (默认值为**默认图片**)
+例如: [
+    "http://b-ssl.duitang.com/uploads/item/201806/04/20180604090459_gqqjo.jpg",
+    "http://img5.imgtn.bdimg.com/it/u=2196122296,3201462689&fm=26&gp=0.jpg"
+]
