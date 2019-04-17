@@ -22,7 +22,7 @@ export default class Asset {
     }
 
     protected getRandomOne(images: string[]): string {
-        var n = Math.floor(Math.random() * images.length + 1) - 1;
+        const n = Math.floor(Math.random() * images.length + 1) - 1;
         return images[n];
     }
 
