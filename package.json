@@ -1,10 +1,10 @@
 {
-    "name": "ycy",
-    "displayName": "超越鼓励师",
-    "description": "写代码不再孤单，有杨超越与你同在",
-    "version": "0.0.3",
-    "publisher": "formulahendry",
-    "icon": "logo.jpg",
+    "name": "cxk",
+    "displayName": "坤坤鼓励师",
+    "description": "写代码不再孤单，有蔡徐坤与你同在，鸡你太美~",
+    "version": "0.0.1",
+    "publisher": "sakura1357",
+    "icon": "logo.png",
     "engines": {
         "vscode": "^1.30.0"
     },
@@ -12,37 +12,43 @@
         "Other"
     ],
     "keywords": [
-        "杨超越",
+        "蔡徐坤",
         "提醒",
-        "鼓励"
+        "鸡你太美"
     ],
     "bugs": {
-        "url": "https://github.com/formulahendry/vscode-ycy/issues",
-        "email": "formulahendry@gmail.com"
+        "url": "https://github.com/sakura1357/vscode-cxk/issues",
+        "email": "xzt1357@gmail.com"
     },
-    "homepage": "https://github.com/formulahendry/vscode-ycy/blob/master/README.md",
+    "homepage": "https://github.com/sakura1357/vscode-cxk",
     "repository": {
         "type": "git",
-        "url": "https://github.com/formulahendry/vscode-ycy.git"
+        "url": "https://github.com/sakura1357/vscode-cxk.git"
     },
     "activationEvents": [
-        "onCommand:ycy.showReminderView",
+        "onCommand:cxk.showReminderView",
+        "onCommand:cxk.setReminderView",
         "*"
     ],
     "main": "./out/extension",
     "contributes": {
         "commands": [
             {
-                "command": "ycy.showReminderView",
-                "title": "打开提醒页面",
-                "category": "ycy"
+                "command": "cxk.showReminderView",
+                "title": "打开默认提醒窗口",
+                "category": "cxk"
+            },
+            {
+                "command": "cxk.setReminderView",
+                "title": "内置11张GIF图，随机替换并展示",
+                "category": "cxk"
             }
         ],
         "configuration": {
             "type": "object",
-            "title": "杨超越",
+            "title": "蔡徐坤",
             "properties": {
-                "ycy.reminderViewIntervalInMinutes": {
+                "cxk.reminderViewIntervalInMinutes": {
                     "type": "number",
                     "default": 60,
                     "description": "展示提醒页面的时间间隔（分钟）"
