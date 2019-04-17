@@ -16,12 +16,16 @@
 
 ## 配置
 
-* `ycy.reminderViewIntervalInMinutes`: 展示提醒页面的时间间隔（分钟）。 (默认值为**60**)
-* `ycy.showTitle`: 提示文字。 (默认值为**小哥哥，小哥哥，代码写久了，该休息啦~**)
+* `ycy.reminderViewIntervalInMinutes`: 展示提醒页面的时间间隔（分钟）。(默认值为**60**)
+* `ycy.title`: 提示文字。 (默认值为**小哥哥，小哥哥，代码写久了，该休息啦~**)
 
-* `ycy.isUseConfigImage`: 是否使用自己配置图片 (默认值为**false**)
-* `ycy.configImages`: 配置图片数组（需要搭配ycy.isUseConfigImage为true） (默认值为**默认图片**)
-例如: [
-    "http://b-ssl.duitang.com/uploads/item/201806/04/20180604090459_gqqjo.jpg",
-    "http://img5.imgtn.bdimg.com/it/u=2196122296,3201462689&fm=26&gp=0.jpg"
+* `ycy.type`: 类型：defalut:默认图；url：图片地址。(默认值为**defalut**)
+* `ycy.customImages`: 配置图片数组（需要搭配ycy.type为url） (默认值为**默认图片**)
+
+```
+如下例子例：
+"ycy.type": "url",
+"ycy.customImages": [
+    "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1555524615240&di=3d483d9a8ae67881458a6617f5f237a1&imgtype=0&src=http%3A%2F%2Fc1.haibao.cn%2Fimg%2F640_479_100_1%2F1534242453.4034%2F4b854e4dd2ca2124d953c913c02d73e6.jpg",
 ]
+```
