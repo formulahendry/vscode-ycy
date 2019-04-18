@@ -2,7 +2,7 @@
     "name": "ycy",
     "displayName": "超越鼓励师",
     "description": "写代码不再孤单，有杨超越与你同在",
-    "version": "0.0.3",
+    "version": "0.1.0",
     "publisher": "formulahendry",
     "icon": "logo.jpg",
     "engines": {
@@ -60,8 +60,7 @@
                 "ycy.customImages": {
                     "type": "array",
                     "default": [
-                        "http://b-ssl.duitang.com/uploads/item/201806/04/20180604090459_gqqjo.jpg",
-                        "http://img5.imgtn.bdimg.com/it/u=2196122296,3201462689&fm=26&gp=0.jpg"
+                        "http://b-ssl.duitang.com/uploads/item/201806/04/20180604090459_gqqjo.jpg"
                     ],
                     "description": "用户设置图片地址"
                 }
