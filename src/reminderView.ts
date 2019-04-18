@@ -8,7 +8,7 @@ export class ReminderView {
     public static show(context: vscode.ExtensionContext, ) {
         let asset: Asset = new Asset(context);
 
-        const imagePath = asset.getImageUrl();
+        const imagePath = asset.getImageUri();
         const title = asset.getTitle();
 
         if (this.panel) {

@@ -59,7 +59,10 @@
                 },
                 "ycy.customImages": {
                     "type": "array",
-                    "default": [],
+                    "default": [
+                        "http://b-ssl.duitang.com/uploads/item/201806/04/20180604090459_gqqjo.jpg",
+                        "http://img5.imgtn.bdimg.com/it/u=2196122296,3201462689&fm=26&gp=0.jpg"
+                    ],
                     "description": "用户设置图片地址"
                 }
             }

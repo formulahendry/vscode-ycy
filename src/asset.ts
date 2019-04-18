@@ -11,19 +11,16 @@ export default class Asset {
     public constructor(private context: vscode.ExtensionContext) {
     }
 
-    public getImageUrl(): vscode.Uri | string {
+    public getImageUri(): vscode.Uri | string {
         const type: string = this.getConfigType();
         let images: vscode.Uri[] | string[];
 
-        // if (type === this.TYPE_LOCAL) {
-        //     images = this.getLocalImages();
-        // } else
         if (type === this.TYPE_URL_IMAGE) {
             images = this.getCustomImages();
         } else {
             images = this.getDefaultImages();
         }
-        // use forget setting customImages,get defalut images
+        // user forget setting customImages, get defalut images
         if (images.length === 0) {
             images = this.getDefaultImages();
         }
@@ -63,16 +60,7 @@ export default class Asset {
     protected getConfigType(): string {
         return Utility.getConfiguration().get<string>('type', 'defalut');
     }
-    // Cannot load resource outside of protocol root, so Can’t set the path by the custom。
-    // protected getCustomLocalPath(): string {
-    //     return Utility.getConfiguration().get<string>('customLocalPath', this.getDefaultYcyImagePath());
-    // }
-    // protected getLocalImages(): vscode.Uri[] {
-    //     const dirPath = this.getCustomLocalPath();
-    //     console.log(dirPath);
-    //     const files = this.readPathImage(dirPath);
-    //     return files;
-    // }
+
     protected getCustomImages() {
         return Utility.getConfiguration().get<string[]>('customImages', []);
     }
