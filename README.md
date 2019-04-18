@@ -12,7 +12,7 @@
 
 * `ycy.reminderViewIntervalInMinutes`: 展示提醒页面的时间间隔（分钟）。(默认值为**60**)
 * `ycy.title`: 提示文字。 (默认值为**小哥哥，小哥哥，代码写久了，该休息啦~**)
-* `ycy.type`: defalut (默认图)；url (图片地址)。(默认值为**defalut**)
+* `ycy.type`: default (默认图)；url (图片地址)。(默认值为**default**)
 * `ycy.customImages`: 配置图片数组（需要搭配ycy.type为url） (默认值为**默认图片**)
 
 ```
@@ -29,4 +29,3 @@
   1、找到vscode插件安装的地方 (如mac 在~/.vscode/extensions/formulahendry.ycy-{version})
   
   2、替换images/ycy内图片
-  
