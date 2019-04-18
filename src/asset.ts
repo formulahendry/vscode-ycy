@@ -4,7 +4,6 @@ import * as fs from 'fs';
 import { Utility } from './utility';
 
 export default class Asset {
-    // public readonly TYPE_LOCAL = 'local';
     public readonly TYPE_URL_IMAGE = 'url';
     public readonly TYPE_DEFAULT = 'defalut';
 
