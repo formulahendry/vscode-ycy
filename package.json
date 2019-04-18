@@ -46,6 +46,24 @@
                     "type": "number",
                     "default": 60,
                     "description": "展示提醒页面的时间间隔（分钟）"
+                },
+                "ycy.title": {
+                    "type": "string",
+                    "default": "小哥哥，小哥哥，代码写久了，该休息啦~",
+                    "description": "页面内展示文字"
+                },
+                "ycy.type": {
+                    "type": "string",
+                    "default": "defalut",
+                    "description": "类型：defalut:默认图；url：网络图"
+                },
+                "ycy.customImages": {
+                    "type": "array",
+                    "default": [
+                        "http://b-ssl.duitang.com/uploads/item/201806/04/20180604090459_gqqjo.jpg",
+                        "http://img5.imgtn.bdimg.com/it/u=2196122296,3201462689&fm=26&gp=0.jpg"
+                    ],
+                    "description": "用户设置图片地址"
                 }
             }
         }
