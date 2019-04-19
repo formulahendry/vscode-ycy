@@ -54,8 +54,8 @@
                 },
                 "ycy.type": {
                     "type": "string",
-                    "default": "defalut",
-                    "description": "类型：defalut:默认图；url：网络图"
+                    "default": "default",
+                    "description": "类型：default:默认图；url：网络图"
                 },
                 "ycy.customImages": {
                     "type": "array",

@@ -5,7 +5,7 @@ import { Utility } from './utility';
 
 export default class Asset {
     public readonly TYPE_URL_IMAGE = 'url';
-    public readonly TYPE_DEFAULT = 'defalut';
+    public readonly TYPE_DEFAULT = 'default';
 
     public constructor(private context: vscode.ExtensionContext) {
     }
@@ -19,7 +19,7 @@ export default class Asset {
         } else {
             images = this.getDefaultImages();
         }
-        // user forget setting customImages, get defalut images
+        // user forget setting customImages, get default images
         if (images.length === 0) {
             images = this.getDefaultImages();
         }
@@ -57,7 +57,7 @@ export default class Asset {
 
 
     protected getConfigType(): string {
-        return Utility.getConfiguration().get<string>('type', 'defalut');
+        return Utility.getConfiguration().get<string>('type', 'default');
     }
 
     protected getCustomImages() {
