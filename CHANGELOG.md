@@ -1,3 +1,6 @@
+## 0.1.1 (2019-04-19)
+* [#25](https://github.com/formulahendry/vscode-ycy/pull/25): Fix typo
+
 ## 0.1.0 (2019-04-18)
 * 增加多图随机
 * 用户可自定义标题
