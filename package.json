@@ -63,6 +63,16 @@
                         "http://b-ssl.duitang.com/uploads/item/201806/04/20180604090459_gqqjo.jpg"
                     ],
                     "description": "用户设置图片地址"
+                },
+                "ycy.audioEnable":{
+                    "type": "boolean",
+                    "default": "false",
+                    "description": "是否同时播放音频"
+                },
+                "ycy.customAudios": {
+                    "type": "array",
+                    "default": [],
+                    "description": "用户设置音频播放地址, 将覆盖默认音频"
                 }
             }
         }
