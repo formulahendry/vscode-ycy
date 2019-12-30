@@ -29,6 +29,8 @@ export default class Asset {
     }
 
     protected getRandomOne(images: string[] | vscode.Uri[]): string | vscode.Uri {
+        let i : number = Date.now() % images.length;
+        while (i-- > 0) Math.random();
         const n = Math.floor(Math.random() * images.length + 1) - 1;
         return images[n];
     }
